@@ -46,7 +46,7 @@ export default function Incidents() {
             <View style={styles.header}>
                 <Image source={logoImg} />
                 <Text style={styles.headerText}>
-                    Total de <Text style={styles.headerTextBold}>{totalIncidents} casos</Text>.
+                    Total de <Text style={styles.headerTextBold}>{totalIncidents === undefined ? 0 : totalIncidents} casos</Text>.
                 </Text>
             </View>
 
